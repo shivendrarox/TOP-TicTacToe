@@ -1,0 +1,55 @@
+.container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  background-color: DodgerBlue;
+  width: 50%;
+  margin: 0 auto; */
+  margin: 0 auto;
+  width: 100%;
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+}
+.container-item {
+  /* text-align: center;
+  font-size: 250%;
+  width: 32%;
+  padding-bottom: 16%;  /* Same as width, sets height 
+  padding-top: 16%;
+  margin-bottom: 2%;  /* (100-32*3)/2 
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8); 
+  */
+  background-color: tan;
+  text-align: center;
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+div.container-item > p{
+  transform: translate(1%, -40%);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.output-div{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.reset-button{
+  background-color:tan;
+  border: none;
+  color: black;
+  font-size: xx-large;
+  margin: 0;
+  margin-top: 40%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
